@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+    <section class="container vh-100 text-center d-flex justify-content-center align-items-center">      
+        <div class="row shadow-lg" id="showQuote" >
+            <div class="col-12 text-white">
+                <div class="info">
+                <h1>Quote Of The Day</h1>
+                <p class="fw-bold fs-5">Press The Button below to receive a random quote!</p>
+                <button onclick="addQuote()" class="p-2  fw-bold adjust btn btn-primary ">Add Quote</button>
+            </div>
+            </div>
+            <div class="col-12 bg-dark rounded p-3 text-white hidden fw-bold my-3 animate__animated animate__fadeInUpBig" id="quote-parent">
+                <p id="quote-text" class="fs-5"></p>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
